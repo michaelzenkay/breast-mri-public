@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "breast-mri-methods"
+version = "0.2.0"
+description = "Three-phase breast MRI tumor segmentation: U-Net, training and physical-space inference"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = ["numpy", "torch>=2.3", "unet==0.8.1", "nibabel", "torchio", "scikit-image"]
+
+[project.scripts]
+breast-mri-train = "breast_mri.training:main"
+breast-mri-evaluate = "breast_mri.evaluation:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["breast_mri*"]

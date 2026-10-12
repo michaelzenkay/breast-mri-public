@@ -1,0 +1,12 @@
+{
+  "manifest": "cases.example.json",
+  "seed": 42,
+  "epochs": 100,
+  "batch_size": 4,
+  "learning_rate": 0.0003,
+  "min_lr": 0.000001,
+  "patch_size": 96,
+  "spacing_mm": 1.0,
+  "augment": true,
+  "initial_checkpoint": null
+}

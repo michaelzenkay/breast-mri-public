@@ -1,0 +1,16 @@
+[
+  {
+    "id": "example-train",
+    "patient_id": "patient-A",
+    "split": "train",
+    "channels": ["../data/A_pre.nii.gz", "../data/A_early.nii.gz", "../data/A_late.nii.gz"],
+    "label": "../data/A_label.nii.gz"
+  },
+  {
+    "id": "example-val",
+    "patient_id": "patient-B",
+    "split": "val",
+    "channels": ["../data/B_pre.nii.gz", "../data/B_early.nii.gz", "../data/B_late.nii.gz"],
+    "label": "../data/B_label.nii.gz"
+  }
+]
